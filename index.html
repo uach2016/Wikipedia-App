@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>WikipediaSearch</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<script src="index.js"></script>
-</head>
-<body>
-	<div class="container">
-		<div class="row main">
-			<div class="col-xs-12 text-center">
-				<p>Start your search from Wikipedia:</p>
-				<form>
-				  <input type="text" name="search" placeholder="Search..">
-				</form>
-			</div>
+	<head>
+		<title>WikipediaSearch</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="base" class="container-fluid topPad">
+		  <div id="searchform">
+			  <div id="random">
+			  	<a href="http://en.wikipedia.org/wiki/Special:Random" class="randomLink" target="_blank">Click here for Random Wikipedia Article</a>
+			  </div>
+			  <div id="search">
+				  <input type="text" id="searchBar" placeholder="Search Article">
+				  <a href="#" class="iconLink"><span id="icons"><i class="fa fa-search icon" onclick="searchF()"></i></a></span>
+			  </div>
+		  </div>
+		  <!--<button id="test">Test</button>-->
+		  <div id="display">
+		  </div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
+
